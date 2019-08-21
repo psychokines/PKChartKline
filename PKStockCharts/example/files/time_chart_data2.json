@@ -1,0 +1,47 @@
+[
+    {
+        "volume": 25800,
+        "price_change": 0.06000000000000227,
+        "price": 1570.5115966796875,
+        "price_change_rate": 0.3382187147688967,
+        "turnover": 45.8922,
+        "date": "2017-06-26 09:30:00",
+        "total_volume": 25800
+    },
+    {
+        "volume": 40700,
+        "price_change": 0.08999999999999986,
+        "price": 1570.5115966796875,
+        "price_change_rate": 0.5073280721533251,
+        "turnover": 72.4987,
+        "date": "2017-06-26 09:31:00",
+        "total_volume": 66500
+    },
+    {
+        "volume": 64200,
+        "price_change": -0.1699999999999982,
+        "price": 0.0,
+        "price_change_rate": -0.9582863585118273,
+        "turnover": 113.7494,
+        "date": "2017-06-26 09:32:00",
+        "total_volume": 130700
+    },
+    {
+        "volume": 24700,
+        "price_change": 0.05000000000000071,
+        "price": 1570.5115966796875,
+        "price_change_rate": 0.2818489289740739,
+        "turnover": 43.91,
+        "date": "2017-06-26 09:33:00",
+        "total_volume": 155400
+    },
+    {
+        "volume": 32622,
+        "price_change": 0.07000000000000028,
+        "price": 1570.5115966796875,
+        "price_change_rate": 0.3945885005636995,
+        "turnover": 58.06970000000001,
+        "date": "2017-06-26 09:34:00",
+        "total_volume": 188022
+    }
+]
