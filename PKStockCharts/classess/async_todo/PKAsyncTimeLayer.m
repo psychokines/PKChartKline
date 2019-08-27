@@ -11,7 +11,6 @@
 @interface PKAsyncTimeLayer () {
     dispatch_queue_t _render_queue;
 }
-
 @end
 
 @implementation PKAsyncTimeLayer
@@ -76,8 +75,5 @@
         }
     });
 }
-
-
-
 
 @end

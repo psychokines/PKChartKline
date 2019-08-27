@@ -28,6 +28,14 @@ NS_ASSUME_NONNULL_BEGIN
 /** 日期时间 */
 - (NSDate *)pk_dateTime;
 
+@optional
+
+/** 大盘红绿柱 */
+- (CGFloat)pk_leadRGBarVolume;
+
+/** 大盘红绿柱方向 (上涨返回YES，下跌返回NO) */
+- (BOOL)pk_isLeadRGBarUpward;
+
 @end
 
 

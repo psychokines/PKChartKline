@@ -12,16 +12,25 @@
 
 @implementation PKStockItem
 
++ (NSDictionary *)mj_objectClassInArray {
+    return @{@"times" : [PKTimeItem class]};
+}
+
++ (NSDictionary *)mj_replacedKeyFromPropertyName {
+    return @{@"name" : @"stock_name",
+             @"code" : @"stock_code"};
+}
+
 @end
 
 @implementation PKTimeItem
 
 - (CGFloat)pk_averagePrice {
-    return self.avg_price;
+    return self.lead_price;
 }
 
 - (nonnull NSDate *)pk_dateTime {
-    NSDate *date = [NSDate pk_dateFromString:self.date formatter:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *date = [NSDate pk_dateFromString:self.date formatter:@"HH:mm"];
     return date;
 }
 
@@ -30,19 +39,19 @@
 }
 
 - (CGFloat)pk_volume {
-    return self.volume;
+    return (CGFloat)(self.volume);
+}
+
+- (CGFloat)pk_leadRGBarVolume {
+    return self.lead_volume;
+}
+
+- (BOOL)pk_isLeadRGBarUpward {
+    return self.lead_upward;
 }
 
 - (CGFloat)pk_referenceValue {
-    return self.price;
-}
-
-//- (CGFloat)pk_preClosePrice {
-//    return 3.5;
-//}
-
-- (CGFloat)pk_positionCostPrice {
-    return 17.7;
+    return self.pre_close_price;
 }
 
 @end
@@ -78,7 +87,7 @@
 
 /** 成交量 */
 - (CGFloat)pk_kVolume {
-    return self.volume_total;
+    return self.volume;
 }
 
 /** 日期时间 */
@@ -88,7 +97,7 @@
 
 - (NSDate *)my_date {
     if (!_my_date) {
-        _my_date = [NSDate pk_dateFromString:self.date_string formatter:@"yyyyMMdd"];
+        _my_date = [NSDate pk_dateFromString:self.date formatter:@"yyyy-MM-dd"];
     }
     return _my_date;
 }

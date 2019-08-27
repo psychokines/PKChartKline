@@ -431,13 +431,11 @@
         CGFloat originX = [self getOriginXWithIndex:idx];
         CGFloat pointY = originYCallback(obj.pk_volume);
         CGRect rect = CGRectMake(originX, pointY, self.set.shapeWidth, CGRectGetMaxY(self.minorChartFrame) - pointY);
-        if (idx > 0 && CGFloatEqualZero(preClosePrice)) {
-            preClosePrice = self.dataList[idx - 1].pk_latestPrice;
-        }
         CGFloat currentPrice = obj.pk_latestPrice;
         if (currentPrice > preClosePrice) [risePath pk_addRect:rect];
         else if (currentPrice < preClosePrice) [fallPath pk_addRect:rect];
         else [flatPath pk_addRect:rect];
+        preClosePrice = currentPrice;
     }];
     
     _VOLRiseLayer.path = risePath.CGPath;
@@ -512,6 +510,17 @@
     CGFloat startPointY = originYCallback(CGPeakLimit(peakValue, preClosePrice)) ;
     CGFloat avgStartPointY = originYCallback(CGPeakLimit(peakValue, firstObj.pk_averagePrice));
     
+    CAShapeLayer *rgbbarLayer = [CAShapeLayer layer];
+    rgbbarLayer.fillColor = [UIColor redColor].CGColor;
+    rgbbarLayer.strokeColor = [UIColor clearColor].CGColor;
+    rgbbarLayer.lineWidth = 0;
+    [self.contentChartLayer insertSublayer:rgbbarLayer atIndex:0];
+    CGFloat originY = self.majorChartFrame.origin.y + half(self.set.gridLineWidth);
+    CGFloat dashY = originY + self.majorChartFrame.size.height * 0.5;
+    
+    CGFloat maxxx = [self getLeadVolumePeakValue].max;
+    
+    UIBezierPath *rgbarPath = [UIBezierPath bezierPath];
     UIBezierPath *timePath = [UIBezierPath bezierPath];
     UIBezierPath *avgPath = [UIBezierPath bezierPath];
     [timePath moveToPoint:CGPointMake(self.majorChartFrame.origin.x, startPointY)];
@@ -524,8 +533,18 @@
         CGFloat avgOriginY = originYCallback(avgValue);
         [timePath addLineToPoint:CGPointMake(centerX, originY)];
         [avgPath addLineToPoint:CGPointMake(centerX, avgOriginY)];
+        
+        // 不超过主图表高度的1/6
+        CGFloat height = self.majorChartFrame.size.height / 6 * (obj.pk_leadRGBarVolume / maxxx);
+        CGFloat originX = [self getOriginXWithIndex:idx];
+        CGRect rect = CGRectMake(originX, dashY, self.set.shapeWidth, height);
+        if (obj.pk_isLeadRGBarUpward) {
+            rect = CGRectMake(originX, dashY, self.set.shapeWidth, -height);
+        }
+        [rgbarPath pk_addRect:rect];
     }];
     
+    rgbbarLayer.path = rgbarPath.CGPath;
     _trendLineLayer.path = timePath.CGPath;
     _avgTrendLineLayer.path = avgPath.CGPath;
 
@@ -970,17 +989,9 @@
 
 - (CGFloat)getVaildPreClosePrice {
     if ([self.coordObj respondsToSelector:@selector(pk_referenceValue)]) {
-        CGFloat prePrice = self.coordObj.pk_referenceValue;
-        if (!CGFloatEqualZero(prePrice)) return prePrice;
-    }
-    return self.dataList.firstObject.pk_latestPrice;
-}
-
-- (CGFloat)getRealPreClosePrice {
-    if ([self.coordObj respondsToSelector:@selector(pk_referenceValue)]) {
         return self.coordObj.pk_referenceValue;
     }
-    return 0.0;
+    return self.dataList.firstObject.pk_latestPrice;
 }
 
 - (CGPeakValue)getPricePeakValue {
@@ -1014,7 +1025,7 @@
 
 - (CGPeakValue)getChangeRatePeakValue {
     CGFloat defaultChangeRate = self.set.defaultChange;
-    CGFloat preClosePrice = [self getRealPreClosePrice];
+    CGFloat preClosePrice = [self getVaildPreClosePrice];
     CGPeakValue pricePeakValue = [self getPricePeakValue];
     
     CGPeakValue peakValue = CGPeakValueZero;
@@ -1042,6 +1053,16 @@
         }];
     } else {
         peakValue = CGPeakValueMake(self.coordObj.pk_maxVolume, self.coordObj.pk_minVolume);
+    }
+    return peakValue;
+}
+
+- (CGPeakValue)getLeadVolumePeakValue {
+    CGPeakValue peakValue = CGPeakValueZero;
+    if ([self.dataList.firstObject respondsToSelector:@selector(pk_leadRGBarVolume)]) {
+        peakValue = [self.dataList pk_peakValueWithEvaluatedBlock:^CGFloat(id<PKTimeChartProtocol>  _Nonnull evaluatedObject) {
+            return evaluatedObject.pk_leadRGBarVolume;
+        }];
     }
     return peakValue;
 }

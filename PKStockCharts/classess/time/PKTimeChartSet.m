@@ -27,7 +27,7 @@
     set.dashLineColor = PKCHART_DASHLINE_COLOR;
     set.dashLinePattern = @[@6, @5];
     
-    set.shapeGap = 0.05;
+    set.shapeGap = 0.5;
     set.riseColor = PKCHART_RISE_COLOR;
     set.fallColor = PKCHART_FALL_COLOR;
     set.flatColor = PKCHART_FLAT_COLOR;

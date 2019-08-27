@@ -7,6 +7,7 @@
 //
 
 #import "PKTimePileBaseLayer.h"
+#import "PKStockObjects.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -12,53 +12,46 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class PKTimeItem;
 @interface PKStockItem : NSObject
 
-@property (nonatomic, assign) BOOL isSuspended;
-@property (nonatomic, assign) NSInteger marketId;
-
-@property (nonatomic, assign) NSInteger stockType;
-@property (nonatomic, strong) NSString *stockCode;
-@property (nonatomic, strong) NSString *stockSign;
-@property (nonatomic, strong) NSString *stockName;
-
-@property (nonatomic, assign) CGFloat price_highest;
-@property (nonatomic, assign) CGFloat price_lowest;
-@property (nonatomic, assign) CGFloat price_open;
-@property (nonatomic, assign) CGFloat price_change;
-@property (nonatomic, assign) CGFloat price_changeRatio;
-@property (nonatomic, assign) CGFloat price_yesterdayClose;
-
-@property (nonatomic, assign) NSInteger date;
-@property (nonatomic, assign) NSInteger dateTime;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *code;
+@property (nonatomic, strong) NSString *market;
+@property (nonatomic, assign) CGFloat high_price;
+@property (nonatomic, assign) CGFloat low_price;
+@property (nonatomic, strong) NSArray<PKTimeItem *> *times;
 
 @end
 
 @interface PKTimeItem : NSObject <PKTimeChartProtocol, PKTimeChartCoordProtocol>
 
-@property (nonatomic, assign) NSInteger volume;
-@property (nonatomic, assign) CGFloat price_change;
 @property (nonatomic, assign) CGFloat price;
-@property (nonatomic, assign) CGFloat price_change_rate;
-@property (nonatomic, assign) CGFloat turnover;
-@property (nonatomic, assign) NSInteger total_volume;
 @property (nonatomic, assign) CGFloat avg_price;
+@property (nonatomic, assign) CGFloat pre_close_price;
 @property (nonatomic, strong) NSString *date;
+@property (nonatomic, assign) NSInteger volume;
+@property (nonatomic, assign) NSInteger amount;
+@property (nonatomic, assign) CGFloat lead_price;
+@property (nonatomic, assign) CGFloat lead_volume;
+@property (nonatomic, assign) BOOL lead_upward;
 
 @end
 
 @interface PKKlineItem : NSObject <PKKLineChartProtocol>
 
-@property (nonatomic , assign) CGFloat close_price; // 收盘价
-@property (nonatomic , assign) CGFloat high_price;  // 最高价
-@property (nonatomic , assign) CGFloat low_price;   // 最低价
-@property (nonatomic , assign) CGFloat open_price;  // 开盘价
-@property (nonatomic , assign) CGFloat price_change; // 涨跌
-@property (nonatomic , assign) CGFloat price_change_rate; // 涨跌幅
-@property (nonatomic , assign) CGFloat volume_price; // 成交额
-@property (nonatomic , assign) CGFloat volume_total; // 成交量
-@property (nonatomic , assign) CGFloat yesterday_close_price;   // 昨收
-@property (nonatomic , copy) NSString *date_string; // 日期
+@property (nonatomic, assign) CGFloat open_price; // 开盘价
+@property (nonatomic, assign) CGFloat close_price; // 收盘价
+@property (nonatomic, assign) CGFloat high_price; // 最高价
+@property (nonatomic, assign) CGFloat low_price; // 最低价
+@property (nonatomic, assign) CGFloat pre_close_price; // 昨收
+@property (nonatomic, assign) CGFloat price_change; // 涨跌额
+@property (nonatomic, assign) CGFloat price_change_rate; // 涨跌幅
+@property (nonatomic, assign) CGFloat amount; // 成交额
+@property (nonatomic, assign) CGFloat volume; // 成交量
+@property (nonatomic, copy) NSString *date; // 日期
+//@property (nonatomic, assign) CGFloat turnover_ratio; // 换手率
+//@property (nonatomic, assign) CGFloat total_position; //持仓量
 
 @end
 

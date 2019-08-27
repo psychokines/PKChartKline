@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6103F7C8230E33A200C1D1CA /* PKBaseLandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103F7C7230E33A200C1D1CA /* PKBaseLandscapeViewController.m */; };
+		6103F7CB230E33BA00C1D1CA /* PKLandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103F7CA230E33BA00C1D1CA /* PKLandscapeViewController.m */; };
+		6103F7CF230E6AD700C1D1CA /* PKLandscapeTopTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103F7CE230E6AD700C1D1CA /* PKLandscapeTopTextView.m */; };
+		6103F7D3230E76C200C1D1CA /* PKLandscapeViewController+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 6103F7D2230E76C200C1D1CA /* PKLandscapeViewController+Extend.m */; };
+		6103F7D5230EAFD300C1D1CA /* pk_times_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6103F7D4230EAFD300C1D1CA /* pk_times_data.plist */; };
+		6103F7D7230FD5AA00C1D1CA /* pk_dayKline_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6103F7D6230FD5AA00C1D1CA /* pk_dayKline_data.plist */; };
 		611EF6D622E31AF100F6AAFC /* PKIndicatorPSYLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 611EF68E22E31AF000F6AAFC /* PKIndicatorPSYLayer.m */; };
 		611EF6D722E31AF100F6AAFC /* PKIndicatorWVADLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 611EF69422E31AF000F6AAFC /* PKIndicatorWVADLayer.m */; };
 		611EF6D822E31AF100F6AAFC /* PKIndicatorDMILayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 611EF69822E31AF000F6AAFC /* PKIndicatorDMILayer.m */; };
@@ -58,27 +64,11 @@
 		613A8E5822D71BB8006A19CA /* PKChartFlashingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 613A8E5122D71BB8006A19CA /* PKChartFlashingView.m */; };
 		613A8E5F22D7209F006A19CA /* PKSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 613A8E5B22D7209F006A19CA /* PKSegmentedControl.m */; };
 		613A8E6022D7209F006A19CA /* PKSegmentedSlideControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 613A8E5D22D7209F006A19CA /* PKSegmentedSlideControl.m */; };
-		6179AB5B22DE0B930015C3BF /* time_chart_data2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6179AB5922DE0B930015C3BF /* time_chart_data2.json */; };
-		6179AB5C22DE0B930015C3BF /* time_chart_data1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6179AB5A22DE0B930015C3BF /* time_chart_data1.json */; };
 		61AA71F922D80FE3005E714A /* PKStockObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AA71F822D80FE3005E714A /* PKStockObjects.m */; };
-		61AA71FB22D813B9005E714A /* time_chart_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 61AA71FA22D813B9005E714A /* time_chart_data.json */; };
 		61AD16F722FC1C3C00EF0D06 /* PKTimePileBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AD16F622FC1C3C00EF0D06 /* PKTimePileBaseLayer.m */; };
 		61AD16FA22FD3FB100EF0D06 /* PKChartGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AD16F922FD3FB100EF0D06 /* PKChartGradientLayer.m */; };
 		61AD16FD2302589900EF0D06 /* PKTimePileTapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AD16FC2302589900EF0D06 /* PKTimePileTapeLayer.m */; };
 		61AD17002302A53400EF0D06 /* PKTimePileIndexLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AD16FF2302A53400EF0D06 /* PKTimePileIndexLayer.m */; };
-		61B5CACD22E3142E000E0AF4 /* stock_allHistory_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CABA22E3142E000E0AF4 /* stock_allHistory_data.plist */; };
-		61B5CACF22E3142E000E0AF4 /* pa_kline_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CABC22E3142E000E0AF4 /* pa_kline_data.plist */; };
-		61B5CAD022E3142E000E0AF4 /* more_pa_kline_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CABD22E3142E000E0AF4 /* more_pa_kline_data.plist */; };
-		61B5CAD122E3142E000E0AF4 /* 600887_five_day.json in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CABE22E3142E000E0AF4 /* 600887_five_day.json */; };
-		61B5CAD222E3142E000E0AF4 /* stock_week_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CABF22E3142E000E0AF4 /* stock_week_data.plist */; };
-		61B5CAD522E3142E000E0AF4 /* stock_5Minutes_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CAC222E3142E000E0AF4 /* stock_5Minutes_data.plist */; };
-		61B5CAD622E3142E000E0AF4 /* stock_15Minutes_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CAC322E3142E000E0AF4 /* stock_15Minutes_data.plist */; };
-		61B5CAD822E3142E000E0AF4 /* yl_kline_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CAC522E3142E000E0AF4 /* yl_kline_data.plist */; };
-		61B5CADC22E3142E000E0AF4 /* 600887_kdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CAC922E3142E000E0AF4 /* 600887_kdata.json */; };
-		61B5CADD22E3142E000E0AF4 /* stock_30Minutes_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CACA22E3142E000E0AF4 /* stock_30Minutes_data.plist */; };
-		61B5CADE22E3142E000E0AF4 /* stock_60Minutes_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CACB22E3142E000E0AF4 /* stock_60Minutes_data.plist */; };
-		61B5CADF22E3142E000E0AF4 /* stock_month_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61B5CACC22E3142E000E0AF4 /* stock_month_data.plist */; };
-		61CC99E722D7516D004FC918 /* PKExample1ViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CC99E622D7516D004FC918 /* PKExample1ViewController+Configuration.m */; };
 		61CC99EC22D75280004FC918 /* NSValue+PKGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CC99EB22D75280004FC918 /* NSValue+PKGeometry.m */; };
 		61D0C46C22D2DA8A009FEABD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D0C46B22D2DA8A009FEABD /* AppDelegate.m */; };
 		61D0C46F22D2DA8A009FEABD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D0C46E22D2DA8A009FEABD /* ViewController.m */; };
@@ -110,6 +100,17 @@
 
 /* Begin PBXFileReference section */
 		3C1E44A037234B09D13DBD2D /* Pods-PKStockCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PKStockCharts.release.xcconfig"; path = "Pods/Target Support Files/Pods-PKStockCharts/Pods-PKStockCharts.release.xcconfig"; sourceTree = "<group>"; };
+		6103F7C6230E33A200C1D1CA /* PKBaseLandscapeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKBaseLandscapeViewController.h; sourceTree = "<group>"; };
+		6103F7C7230E33A200C1D1CA /* PKBaseLandscapeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKBaseLandscapeViewController.m; sourceTree = "<group>"; };
+		6103F7C9230E33BA00C1D1CA /* PKLandscapeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLandscapeViewController.h; sourceTree = "<group>"; };
+		6103F7CA230E33BA00C1D1CA /* PKLandscapeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLandscapeViewController.m; sourceTree = "<group>"; };
+		6103F7CD230E6AD700C1D1CA /* PKLandscapeTopTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKLandscapeTopTextView.h; sourceTree = "<group>"; };
+		6103F7CE230E6AD700C1D1CA /* PKLandscapeTopTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKLandscapeTopTextView.m; sourceTree = "<group>"; };
+		6103F7D0230E6C3E00C1D1CA /* PKStockChartsPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKStockChartsPrefixHeader.pch; sourceTree = "<group>"; };
+		6103F7D1230E76C200C1D1CA /* PKLandscapeViewController+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PKLandscapeViewController+Extend.h"; sourceTree = "<group>"; };
+		6103F7D2230E76C200C1D1CA /* PKLandscapeViewController+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PKLandscapeViewController+Extend.m"; sourceTree = "<group>"; };
+		6103F7D4230EAFD300C1D1CA /* pk_times_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pk_times_data.plist; sourceTree = "<group>"; };
+		6103F7D6230FD5AA00C1D1CA /* pk_dayKline_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pk_dayKline_data.plist; sourceTree = "<group>"; };
 		611EF68E22E31AF000F6AAFC /* PKIndicatorPSYLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKIndicatorPSYLayer.m; sourceTree = "<group>"; };
 		611EF68F22E31AF000F6AAFC /* PKIndicatorASILayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKIndicatorASILayer.h; sourceTree = "<group>"; };
 		611EF69022E31AF000F6AAFC /* PKIndicatorROCLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKIndicatorROCLayer.h; sourceTree = "<group>"; };
@@ -217,11 +218,8 @@
 		613A8E5C22D7209F006A19CA /* PKSegmentedSlideControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSegmentedSlideControl.h; sourceTree = "<group>"; };
 		613A8E5D22D7209F006A19CA /* PKSegmentedSlideControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSegmentedSlideControl.m; sourceTree = "<group>"; };
 		613A8E5E22D7209F006A19CA /* PKSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSegmentedControl.h; sourceTree = "<group>"; };
-		6179AB5922DE0B930015C3BF /* time_chart_data2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time_chart_data2.json; sourceTree = "<group>"; };
-		6179AB5A22DE0B930015C3BF /* time_chart_data1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time_chart_data1.json; sourceTree = "<group>"; };
 		61AA71F722D80FE3005E714A /* PKStockObjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKStockObjects.h; sourceTree = "<group>"; };
 		61AA71F822D80FE3005E714A /* PKStockObjects.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKStockObjects.m; sourceTree = "<group>"; };
-		61AA71FA22D813B9005E714A /* time_chart_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = time_chart_data.json; sourceTree = "<group>"; };
 		61AD16F522FC1C3C00EF0D06 /* PKTimePileBaseLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKTimePileBaseLayer.h; sourceTree = "<group>"; };
 		61AD16F622FC1C3C00EF0D06 /* PKTimePileBaseLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTimePileBaseLayer.m; sourceTree = "<group>"; };
 		61AD16F822FD3FB100EF0D06 /* PKChartGradientLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKChartGradientLayer.h; sourceTree = "<group>"; };
@@ -230,20 +228,6 @@
 		61AD16FC2302589900EF0D06 /* PKTimePileTapeLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTimePileTapeLayer.m; sourceTree = "<group>"; };
 		61AD16FE2302A53400EF0D06 /* PKTimePileIndexLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKTimePileIndexLayer.h; sourceTree = "<group>"; };
 		61AD16FF2302A53400EF0D06 /* PKTimePileIndexLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTimePileIndexLayer.m; sourceTree = "<group>"; };
-		61B5CABA22E3142E000E0AF4 /* stock_allHistory_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stock_allHistory_data.plist; sourceTree = "<group>"; };
-		61B5CABC22E3142E000E0AF4 /* pa_kline_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pa_kline_data.plist; sourceTree = "<group>"; };
-		61B5CABD22E3142E000E0AF4 /* more_pa_kline_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = more_pa_kline_data.plist; sourceTree = "<group>"; };
-		61B5CABE22E3142E000E0AF4 /* 600887_five_day.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 600887_five_day.json; sourceTree = "<group>"; };
-		61B5CABF22E3142E000E0AF4 /* stock_week_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stock_week_data.plist; sourceTree = "<group>"; };
-		61B5CAC222E3142E000E0AF4 /* stock_5Minutes_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stock_5Minutes_data.plist; sourceTree = "<group>"; };
-		61B5CAC322E3142E000E0AF4 /* stock_15Minutes_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stock_15Minutes_data.plist; sourceTree = "<group>"; };
-		61B5CAC522E3142E000E0AF4 /* yl_kline_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = yl_kline_data.plist; sourceTree = "<group>"; };
-		61B5CAC922E3142E000E0AF4 /* 600887_kdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 600887_kdata.json; sourceTree = "<group>"; };
-		61B5CACA22E3142E000E0AF4 /* stock_30Minutes_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stock_30Minutes_data.plist; sourceTree = "<group>"; };
-		61B5CACB22E3142E000E0AF4 /* stock_60Minutes_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stock_60Minutes_data.plist; sourceTree = "<group>"; };
-		61B5CACC22E3142E000E0AF4 /* stock_month_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stock_month_data.plist; sourceTree = "<group>"; };
-		61CC99E522D7516D004FC918 /* PKExample1ViewController+Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PKExample1ViewController+Configuration.h"; sourceTree = "<group>"; };
-		61CC99E622D7516D004FC918 /* PKExample1ViewController+Configuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PKExample1ViewController+Configuration.m"; sourceTree = "<group>"; };
 		61CC99EA22D75280004FC918 /* NSValue+PKGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSValue+PKGeometry.h"; sourceTree = "<group>"; };
 		61CC99EB22D75280004FC918 /* NSValue+PKGeometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSValue+PKGeometry.m"; sourceTree = "<group>"; };
 		61CC99ED22D755FB004FC918 /* PKChartCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKChartCategories.h; sourceTree = "<group>"; };
@@ -293,6 +277,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6103F7CC230E6AAF00C1D1CA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				6103F7CD230E6AD700C1D1CA /* PKLandscapeTopTextView.h */,
+				6103F7CE230E6AD700C1D1CA /* PKLandscapeTopTextView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		611EF68D22E31AF000F6AAFC /* indicators */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,12 +378,12 @@
 			path = calculations;
 			sourceTree = "<group>";
 		};
-		6131366522DF612400F7060A /* kits */ = {
+		6131366522DF612400F7060A /* uikits */ = {
 			isa = PBXGroup;
 			children = (
 				613A8E5A22D7209F006A19CA /* segmentedControl */,
 			);
-			path = kits;
+			path = uikits;
 			sourceTree = "<group>";
 		};
 		613A8E2522D7128B006A19CA /* classess */ = {
@@ -399,7 +392,7 @@
 				613A8E2622D712A1006A19CA /* common */,
 				61CC99E922D751FD004FC918 /* categories */,
 				613A8E2D22D716D8006A19CA /* time */,
-				61CFE00222DC215F001899D4 /* async */,
+				61CFE00222DC215F001899D4 /* async_todo */,
 				611EF6C522E31AF000F6AAFC /* kline */,
 				611EF68D22E31AF000F6AAFC /* indicators */,
 				611EF6CF22E31AF000F6AAFC /* calculations */,
@@ -437,6 +430,8 @@
 				611EF6FB22E31D8B00F6AAFC /* PKTimeChart+Frame.h */,
 				61AD16F522FC1C3C00EF0D06 /* PKTimePileBaseLayer.h */,
 				61AD16F622FC1C3C00EF0D06 /* PKTimePileBaseLayer.m */,
+				61AD16FE2302A53400EF0D06 /* PKTimePileIndexLayer.h */,
+				61AD16FF2302A53400EF0D06 /* PKTimePileIndexLayer.m */,
 			);
 			path = time;
 			sourceTree = "<group>";
@@ -444,8 +439,9 @@
 		613A8E5922D72015006A19CA /* example */ = {
 			isa = PBXGroup;
 			children = (
-				61AA71F322D80DBB005E714A /* files */,
-				6131366522DF612400F7060A /* kits */,
+				61AA71F322D80DBB005E714A /* data */,
+				6131366522DF612400F7060A /* uikits */,
+				6103F7CC230E6AAF00C1D1CA /* views */,
 				61AA71F622D80DFE005E714A /* model */,
 				613A8E6122D720A2006A19CA /* controllers */,
 			);
@@ -468,21 +464,23 @@
 			children = (
 				613A8E2A22D71438006A19CA /* PKExample1ViewController.h */,
 				613A8E2B22D71438006A19CA /* PKExample1ViewController.m */,
-				61CC99E522D7516D004FC918 /* PKExample1ViewController+Configuration.h */,
-				61CC99E622D7516D004FC918 /* PKExample1ViewController+Configuration.m */,
+				6103F7C6230E33A200C1D1CA /* PKBaseLandscapeViewController.h */,
+				6103F7C7230E33A200C1D1CA /* PKBaseLandscapeViewController.m */,
+				6103F7C9230E33BA00C1D1CA /* PKLandscapeViewController.h */,
+				6103F7CA230E33BA00C1D1CA /* PKLandscapeViewController.m */,
+				6103F7D1230E76C200C1D1CA /* PKLandscapeViewController+Extend.h */,
+				6103F7D2230E76C200C1D1CA /* PKLandscapeViewController+Extend.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
 		};
-		61AA71F322D80DBB005E714A /* files */ = {
+		61AA71F322D80DBB005E714A /* data */ = {
 			isa = PBXGroup;
 			children = (
-				61B5CAB922E3142E000E0AF4 /* stockData */,
-				6179AB5922DE0B930015C3BF /* time_chart_data2.json */,
-				6179AB5A22DE0B930015C3BF /* time_chart_data1.json */,
-				61AA71FA22D813B9005E714A /* time_chart_data.json */,
+				6103F7D6230FD5AA00C1D1CA /* pk_dayKline_data.plist */,
+				6103F7D4230EAFD300C1D1CA /* pk_times_data.plist */,
 			);
-			path = files;
+			path = data;
 			sourceTree = "<group>";
 		};
 		61AA71F622D80DFE005E714A /* model */ = {
@@ -492,25 +490,6 @@
 				61AA71F822D80FE3005E714A /* PKStockObjects.m */,
 			);
 			path = model;
-			sourceTree = "<group>";
-		};
-		61B5CAB922E3142E000E0AF4 /* stockData */ = {
-			isa = PBXGroup;
-			children = (
-				61B5CABA22E3142E000E0AF4 /* stock_allHistory_data.plist */,
-				61B5CABC22E3142E000E0AF4 /* pa_kline_data.plist */,
-				61B5CABD22E3142E000E0AF4 /* more_pa_kline_data.plist */,
-				61B5CABE22E3142E000E0AF4 /* 600887_five_day.json */,
-				61B5CABF22E3142E000E0AF4 /* stock_week_data.plist */,
-				61B5CAC222E3142E000E0AF4 /* stock_5Minutes_data.plist */,
-				61B5CAC322E3142E000E0AF4 /* stock_15Minutes_data.plist */,
-				61B5CAC522E3142E000E0AF4 /* yl_kline_data.plist */,
-				61B5CAC922E3142E000E0AF4 /* 600887_kdata.json */,
-				61B5CACA22E3142E000E0AF4 /* stock_30Minutes_data.plist */,
-				61B5CACB22E3142E000E0AF4 /* stock_60Minutes_data.plist */,
-				61B5CACC22E3142E000E0AF4 /* stock_month_data.plist */,
-			);
-			path = stockData;
 			sourceTree = "<group>";
 		};
 		61CC99E922D751FD004FC918 /* categories */ = {
@@ -533,19 +512,17 @@
 			path = categories;
 			sourceTree = "<group>";
 		};
-		61CFE00222DC215F001899D4 /* async */ = {
+		61CFE00222DC215F001899D4 /* async_todo */ = {
 			isa = PBXGroup;
 			children = (
 				61AD16FB2302589900EF0D06 /* PKTimePileTapeLayer.h */,
 				61AD16FC2302589900EF0D06 /* PKTimePileTapeLayer.m */,
-				61AD16FE2302A53400EF0D06 /* PKTimePileIndexLayer.h */,
-				61AD16FF2302A53400EF0D06 /* PKTimePileIndexLayer.m */,
 				611EF78422F166EE00F6AAFC /* PKAsyncTimeChart.h */,
 				611EF78522F166EE00F6AAFC /* PKAsyncTimeChart.m */,
 				611EF77222EEB50800F6AAFC /* PKAsyncTimeLayer.h */,
 				611EF77322EEB50800F6AAFC /* PKAsyncTimeLayer.m */,
 			);
-			path = async;
+			path = async_todo;
 			sourceTree = "<group>";
 		};
 		61D0C45E22D2DA8A009FEABD = {
@@ -584,6 +561,7 @@
 				61D0C47522D2DA8C009FEABD /* LaunchScreen.storyboard */,
 				61D0C47822D2DA8C009FEABD /* Info.plist */,
 				61D0C47922D2DA8C009FEABD /* main.m */,
+				6103F7D0230E6C3E00C1D1CA /* PKStockChartsPrefixHeader.pch */,
 			);
 			path = PKStockCharts;
 			sourceTree = "<group>";
@@ -728,23 +706,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				61D0C47722D2DA8C009FEABD /* LaunchScreen.storyboard in Resources */,
-				61B5CAD222E3142E000E0AF4 /* stock_week_data.plist in Resources */,
-				61B5CADF22E3142E000E0AF4 /* stock_month_data.plist in Resources */,
-				61B5CADC22E3142E000E0AF4 /* 600887_kdata.json in Resources */,
-				61AA71FB22D813B9005E714A /* time_chart_data.json in Resources */,
-				6179AB5C22DE0B930015C3BF /* time_chart_data1.json in Resources */,
-				61B5CADE22E3142E000E0AF4 /* stock_60Minutes_data.plist in Resources */,
-				61B5CAD622E3142E000E0AF4 /* stock_15Minutes_data.plist in Resources */,
-				61B5CACF22E3142E000E0AF4 /* pa_kline_data.plist in Resources */,
-				61B5CAD522E3142E000E0AF4 /* stock_5Minutes_data.plist in Resources */,
-				61B5CACD22E3142E000E0AF4 /* stock_allHistory_data.plist in Resources */,
-				61B5CAD822E3142E000E0AF4 /* yl_kline_data.plist in Resources */,
-				61B5CADD22E3142E000E0AF4 /* stock_30Minutes_data.plist in Resources */,
-				61B5CAD122E3142E000E0AF4 /* 600887_five_day.json in Resources */,
-				61B5CAD022E3142E000E0AF4 /* more_pa_kline_data.plist in Resources */,
 				61D0C47422D2DA8C009FEABD /* Assets.xcassets in Resources */,
-				6179AB5B22DE0B930015C3BF /* time_chart_data2.json in Resources */,
+				6103F7D5230EAFD300C1D1CA /* pk_times_data.plist in Resources */,
 				61D0C47222D2DA8A009FEABD /* Main.storyboard in Resources */,
+				6103F7D7230FD5AA00C1D1CA /* pk_dayKline_data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,6 +756,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				611EF6DD22E31AF100F6AAFC /* PKIndicatorEMALayer.m in Sources */,
+				6103F7CB230E33BA00C1D1CA /* PKLandscapeViewController.m in Sources */,
 				611EF6E322E31AF100F6AAFC /* PKIndicatorBaseLayer.m in Sources */,
 				611EF6F422E31AF100F6AAFC /* PKKLineLoadingView.m in Sources */,
 				611EF6DB22E31AF100F6AAFC /* PKIndicatorKDJLayer.m in Sources */,
@@ -800,9 +766,12 @@
 				611EF6F022E31AF100F6AAFC /* PKIndicatorBRARLayer.m in Sources */,
 				611EF6F622E31AF100F6AAFC /* NSArray+PKIndicatorCacheCalculator.m in Sources */,
 				61AD16F722FC1C3C00EF0D06 /* PKTimePileBaseLayer.m in Sources */,
+				6103F7C8230E33A200C1D1CA /* PKBaseLandscapeViewController.m in Sources */,
+				6103F7CF230E6AD700C1D1CA /* PKLandscapeTopTextView.m in Sources */,
 				611EF6D822E31AF100F6AAFC /* PKIndicatorDMILayer.m in Sources */,
 				613A8E6022D7209F006A19CA /* PKSegmentedSlideControl.m in Sources */,
 				613A8E2C22D71438006A19CA /* PKExample1ViewController.m in Sources */,
+				6103F7D3230E76C200C1D1CA /* PKLandscapeViewController+Extend.m in Sources */,
 				611EF6EF22E31AF100F6AAFC /* PKIndicatorBOLLLayer.m in Sources */,
 				613A8E5722D71BB8006A19CA /* PKTimeChartSet.m in Sources */,
 				611EF6DF22E31AF100F6AAFC /* PKIndicatorIdentifier.m in Sources */,
@@ -817,7 +786,6 @@
 				61D0C46F22D2DA8A009FEABD /* ViewController.m in Sources */,
 				613A8E5522D71BB8006A19CA /* PKTimeBaseChart.m in Sources */,
 				611EF6ED22E31AF100F6AAFC /* PKIndicatorVOLLayer.m in Sources */,
-				61CC99E722D7516D004FC918 /* PKExample1ViewController+Configuration.m in Sources */,
 				611EF6D622E31AF100F6AAFC /* PKIndicatorPSYLayer.m in Sources */,
 				611EF78622F166EE00F6AAFC /* PKAsyncTimeChart.m in Sources */,
 				613A8E5622D71BB8006A19CA /* PKTimeChart.m in Sources */,
@@ -1022,6 +990,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VT73DARZRD;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PKStockCharts/PKStockChartsPrefixHeader.pch";
 				INFOPLIST_FILE = PKStockCharts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1041,6 +1010,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VT73DARZRD;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PKStockCharts/PKStockChartsPrefixHeader.pch";
 				INFOPLIST_FILE = PKStockCharts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
