@@ -2,13 +2,6 @@
 
 # PKStockChart
 
-[![CI Status](https://img.shields.io/travis/gren-beans/PKStockChart.svg?style=flat)](https://travis-ci.org/gren-beans/PKStockChart)
-[![Version](https://img.shields.io/cocoapods/v/PKStockChart.svg?style=flat)](https://cocoapods.org/pods/PKStockChart)
-[![License](https://img.shields.io/cocoapods/l/PKStockChart.svg?style=flat)](https://cocoapods.org/pods/PKStockChart)
-[![Platform](https://img.shields.io/cocoapods/p/PKStockChart.svg?style=flat)](https://cocoapods.org/pods/PKStockChart)
-
-
-
 一个使用简单快速、高性能的股票图表库，包括K线图分时图，支持外观样式自定义，支持叠加绘制图表。
 
 ## 分时图表PKTimeChart
@@ -78,7 +71,7 @@
 
 **五日分时图**
 
-<img src="https://github.com/PsychokinesisTeam/PKStockCharts/blob/master/Resources/003.png?raw=true" width="500px" height="265px">
+<img src="https://github.com/PsychokinesisTeam/PKStockCharts/blob/master/Resources/005.png?raw=true" width="500px" height="265px">
 
 <img src="https://github.com/PsychokinesisTeam/PKStockCharts/blob/master/Resources/004.png?raw=true" width="500px" height="265px">
 
